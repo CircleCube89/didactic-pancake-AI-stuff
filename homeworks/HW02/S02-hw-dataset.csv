@@ -3,7 +3,7 @@ user_id,age,country,purchases,revenue
 2,24,RU,5,1115
 3,52,FR,7,399
 4,31,RU,6,654
-5,,DE,6,1296
+5,   ,DE,6,1296
 6,120,FR,-1,785
 7,46,RU,0,0
 8,28,CN,2,456
