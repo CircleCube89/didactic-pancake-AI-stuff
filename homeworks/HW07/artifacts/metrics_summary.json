@@ -1,0 +1,108 @@
+{
+  "results": {
+    "Kmeans-S07-hw-dataset-01.csv": [
+      {
+        "silhouette": 0.38330054183984447,
+        "calinski_harabasz": 9427.499744196684,
+        "davies_bouldin": 1.1603490405338497
+      },
+      {
+        "n_points": 12000,
+        "n_clusters": 4,
+        "n_noise": 0.0,
+        "noise_share": 0.0
+      }
+    ],
+    "Kmeans-S07-hw-dataset-02.csv": [
+      {
+        "silhouette": 0.2515088157020451,
+        "calinski_harabasz": 2915.5976490257517,
+        "davies_bouldin": 1.2994936008185958
+      },
+      {
+        "n_points": 8000,
+        "n_clusters": 4,
+        "n_noise": 0.0,
+        "noise_share": 0.0
+      }
+    ],
+    "Kmeans-S07-hw-dataset-03.csv": [
+      {
+        "silhouette": 0.3146186578997614,
+        "calinski_harabasz": 6492.278930703823,
+        "davies_bouldin": 1.1596756007747975
+      },
+      {
+        "n_points": 15000,
+        "n_clusters": 4,
+        "n_noise": 0.0,
+        "noise_share": 0.0
+      }
+    ],
+    "Kmeans-S07-hw-dataset-04.csv": [
+      {
+        "silhouette": 0.3932331126912458,
+        "calinski_harabasz": 2324.370923902055,
+        "davies_bouldin": 1.1154367749029954
+      },
+      {
+        "n_points": 5490,
+        "n_clusters": 4,
+        "n_noise": 0.0,
+        "noise_share": 0.0
+      }
+    ],
+    "DBSCAN-S07-hw-dataset-01.csv": [
+      {
+        "silhouette": 0.43184552373943935,
+        "calinski_harabasz": 7824.324869411588,
+        "davies_bouldin": 0.9866136514979242
+      },
+      {
+        "n_points": 12000,
+        "n_clusters": 5,
+        "n_noise": 0.30291666666666667,
+        "noise_share": 2.5243055555555557e-05
+      }
+    ],
+    "DBSCAN-S07-hw-dataset-02.csv": [
+      {
+        "silhouette": null,
+        "calinski_harabasz": null,
+        "davies_bouldin": null
+      },
+      {
+        "n_points": 8000,
+        "n_clusters": 1,
+        "n_noise": 0.08475,
+        "noise_share": 1.059375e-05
+      }
+    ],
+    "DBSCAN-S07-hw-dataset-03.csv": [
+      {
+        "silhouette": 0.22682862879981183,
+        "calinski_harabasz": 3977.8260509630695,
+        "davies_bouldin": 1.2655088669136536
+      },
+      {
+        "n_points": 15000,
+        "n_clusters": 4,
+        "n_noise": 0.1058,
+        "noise_share": 7.053333333333333e-06
+      }
+    ],
+    "DBSCAN-S07-hw-dataset-04.csv": [
+      {
+        "silhouette": null,
+        "calinski_harabasz": null,
+        "davies_bouldin": null
+      },
+      {
+        "n_points": 5490,
+        "n_clusters": 0,
+        "n_noise": 1.0,
+        "noise_share": 0.00018214936247723133
+      }
+    ]
+  }
+}
