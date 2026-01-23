@@ -20,38 +20,33 @@
  
 ## 3. Models
 
-"LogReg(scaled)": {
-    "best_params": {
-      "lr__C": 10.0,
-      "lr__penalty": "l2",
-      "lr__solver": "lbfgs"
-    },
-    "best_cv_roc_auc": 0.8822238806908922
-  },
-  "DecisionTree": {
-    "best_params": {
-      "ccp_alpha": 0.0,
-      "max_depth": null,
-      "min_samples_leaf": 20
-    },
-    "best_cv_roc_auc": 0.9112358432907914
+{
+  "HistGradientBoosting": {
+    "accuracy": 0.9363333333333334,
+    "f1": 0.8982418753329782,
+    "roc_auc": 0.9746823421867858
   },
   "RandomForest": {
-    "best_params": {
-      "max_depth": null,
-      "max_features": "sqrt",
-      "min_samples_leaf": 1
-    },
-    "best_cv_roc_auc": 0.9684465802433795
+    "accuracy": 0.9346666666666666,
+    "f1": 0.8942826321467098,
+    "roc_auc": 0.97060992331522
   },
-  "HistGradientBoosting": {
-    "best_params": {
-      "learning_rate": 0.1,
-      "max_depth": null,
-      "max_leaf_nodes": 63
-    },
-    "best_cv_roc_auc": 0.9719880531240899
+  "DecisionTree": {
+    "accuracy": 0.8633333333333333,
+    "f1": 0.7848898216159497,
+    "roc_auc": 0.9105332385353713
+  },
+  "LogisticRegression": {
+    "accuracy": 0.8296666666666667,
+    "f1": 0.7146845337800112,
+    "roc_auc": 0.878905083540704
+  },
+  "Dummy": {
+    "accuracy": 0.5623333333333334,
+    "f1": 0.3256291730868002,
+    "roc_auc": 0.5008404855009903
   }
+}
 
 
 ## 4. Results

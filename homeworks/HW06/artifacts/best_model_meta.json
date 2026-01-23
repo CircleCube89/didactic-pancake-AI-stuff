@@ -1,17 +1,14 @@
 {
   "best_model_label": "HistGradientBoosting",
   "test_metrics": {
-    "accuracy": {
-      "4": 0.9363333333333334
-    },
     "f1": {
-      "4": 0.8982418753329782
+      "0.9363333333333334": 0.8982418753329782
     },
     "roc_auc": {
-      "4": 0.9746823421867858
+      "0.9363333333333334": 0.9746823421867858
     },
     "model": {
-      "4": "HistGradientBoosting"
+      "0.9363333333333334": "HistGradientBoosting"
     }
   },
   "search_summary": {

@@ -3,7 +3,7 @@
     "Kmeans-S07-hw-dataset-01.csv": [
       {
         "silhouette": 0.38330054183984447,
-        "calinski_harabasz": 9427.499744196684,
+        "calinski_harabasz": 9427.499744196683,
         "davies_bouldin": 1.1603490405338497
       },
       {
@@ -15,9 +15,9 @@
     ],
     "Kmeans-S07-hw-dataset-02.csv": [
       {
-        "silhouette": 0.2515088157020451,
-        "calinski_harabasz": 2915.5976490257517,
-        "davies_bouldin": 1.2994936008185958
+        "silhouette": 0.2514805632951281,
+        "calinski_harabasz": 2915.565357085485,
+        "davies_bouldin": 1.2998187751155688
       },
       {
         "n_points": 8000,
@@ -29,7 +29,7 @@
     "Kmeans-S07-hw-dataset-03.csv": [
       {
         "silhouette": 0.3146186578997614,
-        "calinski_harabasz": 6492.278930703823,
+        "calinski_harabasz": 6492.278930703822,
         "davies_bouldin": 1.1596756007747975
       },
       {
@@ -41,12 +41,12 @@
     ],
     "Kmeans-S07-hw-dataset-04.csv": [
       {
-        "silhouette": 0.3932331126912458,
-        "calinski_harabasz": 2324.370923902055,
-        "davies_bouldin": 1.1154367749029954
+        "silhouette": 0.35130929768354796,
+        "calinski_harabasz": 3305.735430539478,
+        "davies_bouldin": 1.273259304784502
       },
       {
-        "n_points": 5490,
+        "n_points": 10000,
         "n_clusters": 4,
         "n_noise": 0.0,
         "noise_share": 0.0
@@ -98,10 +98,10 @@
         "davies_bouldin": null
       },
       {
-        "n_points": 5490,
+        "n_points": 10000,
         "n_clusters": 0,
         "n_noise": 1.0,
-        "noise_share": 0.00018214936247723133
+        "noise_share": 0.0001
       }
     ]
   }

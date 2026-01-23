@@ -1,5 +1,5 @@
 {
-  "LogReg(scaled)": {
+  "LogisticRegression": {
     "best_params": {
       "lr__C": 100.0,
       "lr__penalty": "l2",
