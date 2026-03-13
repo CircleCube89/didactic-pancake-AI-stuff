@@ -1,0 +1,29 @@
+{
+"layers":[
+    {
+"name":"input",
+"size":754
+},
+ {
+"name":"relu",
+"size":256
+},
+ {
+"name":"relu",
+"size":754
+},
+ {
+"name":"output",
+"size":64
+}
+],
+"optimizer":{
+    "name":"Adam",
+    "lr":0.001
+},
+"criterion":{"name":"CrossEntropy"},
+"seed":42,
+"dataset":"EMNIST"
+
+
+}
