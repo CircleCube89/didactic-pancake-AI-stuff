@@ -1,8 +1,8 @@
 experiment_id,dataset,seed,model_summary,optimizer,lr,momentum,weight_decay,epochs_trained,best_val_accuracy,best_val_loss
-E1,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=False",Adam,0.001,0,0,20,0.8367761299435028,0.5924280268155923
-E2,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.2, use_batchnorm=False",Adam,0.001,0,0,20,0.8419844632768362,0.47832722860877797
-E3,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8603460451977402,0.4750645668324778
-E4,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8603460451977402,0.4750645668324778
-O1,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8603460451977402,0.4750645668324778
-O2,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8603460451977402,0.4750645668324778
-O3,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8603460451977402,0.4750645668324778
+E1,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=False",Adam,0.001,0,0,20,0.8342161016949152,0.5841445980940835
+E2,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.2, use_batchnorm=False",Adam,0.001,0,0,20,0.8367761299435028,0.494122748068497
+E3,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8531956214689266,0.4882643845795238
+E4,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8531956214689266,0.4882643845795238
+O1,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8531956214689266,0.4882643845795238
+O2,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8531956214689266,0.4882643845795238
+O3,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0.05,0,20,0.8531956214689266,0.4882643845795238
