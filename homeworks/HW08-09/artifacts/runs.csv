@@ -5,4 +5,4 @@ E3,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.
 E4,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8531956214689266,0.4882643845795238
 O1,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8531956214689266,0.4882643845795238
 O2,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",Adam,0.001,0,0,20,0.8531956214689266,0.4882643845795238
-O3,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",SGD,0.001,0.05,0,20,0.8531956214689266,0.4882643845795238
+O3,EMNIST,42,"hidden_dims=(256, 128), dropout_p=0.0, use_batchnorm=True",SGD,0.001,0.8,0.05,20,0.8531956214689266,0.4882643845795238
