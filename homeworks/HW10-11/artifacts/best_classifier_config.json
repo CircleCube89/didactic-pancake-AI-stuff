@@ -1,0 +1,55 @@
+{
+"features":[
+    {
+"name":"Conv2D",
+"InChannels":3,
+"OutChannels":32,
+"kernel_size":3,
+"padding":1
+},
+ {
+"name":"relu"
+},
+ {
+"name":"MaxPool2D",
+"size":2
+},
+{
+"name":"Conv2D",
+"InChannels":32,
+"OutChannels":64,
+"kernel_size":3,
+"padding":1
+},
+ {
+"name":"relu"
+},
+ {
+"name":"MaxPool2D",
+"size":2
+},
+{
+"name":"Conv2D",
+"InChannels":64,
+"OutChannels":128,
+"kernel_size":3,
+"padding":1
+},
+ {
+"name":"relu"
+},
+ {
+"name":"MaxPool2D",
+"size":2
+}
+],
+"optimizer":{
+    "name":"Adam",
+    "lr":0.001
+},
+"criterion":{"name":"CrossEntropy"},
+"seed":42,
+"dataset":"CIFAR100"
+
+
+}
