@@ -1,0 +1,12 @@
+{
+"epochs":30,
+"criterion":{"name":"MSELoss"},
+"seed":42,
+"lr":5e-4,
+"hidden_size":64, 
+"num_layers":2,
+"batch_first":true,
+"dropout":0,
+"optimizer":"Adam"
+
+}

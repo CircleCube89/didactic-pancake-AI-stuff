@@ -1,0 +1,5 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape
+B1,forecasting,S12-hw-dataset.csv,42,naive baseline,none,none,0,6.44111801242236,8.207077766528016,4.393620013429696
+B2,forecasting,S12-hw-dataset.csv,42,moving avrerage baseline,none,none,0,12.697559893522625,15.226532805400108,8.812577344433095
+B3,forecasting,S12-hw-dataset.csv,42,Ridge,none,none,0,12.697559893522625,15.226532805400108,8.812577344433095
+R1,forecasting,S12-hw-dataset.csv,42,GRU,Adam,0.0005,30,12.697559893522625,15.226532805400108,8.812577344433095
