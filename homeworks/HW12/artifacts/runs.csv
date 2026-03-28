@@ -1,5 +1,6 @@
-experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape
-B1,forecasting,S12-hw-dataset.csv,42,naive baseline,none,none,0,6.44111801242236,8.207077766528016,4.393620013429696
-B2,forecasting,S12-hw-dataset.csv,42,moving avrerage baseline,none,none,0,12.697559893522625,15.226532805400108,8.812577344433095
-B3,forecasting,S12-hw-dataset.csv,42,Ridge,none,none,0,12.697559893522625,15.226532805400108,8.812577344433095
-R1,forecasting,S12-hw-dataset.csv,42,GRU,Adam,0.0005,30,12.697559893522625,15.226532805400108,8.812577344433095
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,split_summary,window_size,horizon,features_summary,scaler,test_mae,test_rmse,test_mape,best_val_mae,best_val_rmse,best_val_mape,notes
+B1,forecasting,S12-hw-dataset.csv,42,naive baseline,none,none,0,train_frac: float = 0.70 val_frac: float = 0.15 test_frac: float = 0.15,none,1,lag_1,none,none,none,none,6.44111801242236,8.207077766528016,4.393620013429696,
+B2,forecasting,S12-hw-dataset.csv,42,moving avrerage baseline,none,none,0,train_frac: float = 0.70 val_frac: float = 0.15 test_frac: float = 0.15,7,1,rolling_mean_7,none,none,none,none,12.697559893522625,15.226532805400108,8.812577344433095,
+B3,forecasting,S12-hw-dataset.csv,42,Ridge,none,none,0,train_frac: float = 0.70 val_frac: float = 0.15 test_frac: float = 0.15,none,1," dayofweek, month,dow_sin, dow_cos,month_sin, month_cos,lag_1, lag_2, lag_3, lag_7, lag_14, lag_28,rolling_mean_7, rolling_std_7, rolling_mean_28, rolling_std_28   ",StandartScaler,none,none,none,5.139289359809449,6.5908721936777415,3.449632176351384,
+R1,forecasting,S12-hw-dataset.csv,42,GRU,Adam,0.0005,30,train_frac: float = 0.70 val_frac: float = 0.15 test_frac: float = 0.15,28,1,"hidden_size=64, num_layers=2",StandartScaler,none,none,none,12.697559893522625,15.226532805400108,8.812577344433095,
+B3,forecasting,S12-hw-dataset.csv,42,Ridge,none,none,0,train_frac: float = 0.70 val_frac: float = 0.15 test_frac: float = 0.15,none,1," dayofweek, month,dow_sin, dow_cos,month_sin, month_cos,lag_1, lag_2, lag_3, lag_7, lag_14, lag_28,rolling_mean_7, rolling_std_7, rolling_mean_28, rolling_std_28   ",StandartScaler,16.475816655603253,20.831019813600285,10.55547049544385,none,none,none,
