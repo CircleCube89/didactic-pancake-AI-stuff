@@ -2,8 +2,8 @@
 
 ## 1. Кратко: что сделано
 
-- Какой датасет выбран для части A и почему. CIFAR100
-- Какой датасет и какой трек выбран для части B (`detection` или `segmentation`) и почему.
+- CIFAR100
+- `detection`
 - Что сравнивалось в части A и что сравнивалось во второй части.
 
 ## 2. Среда и воспроизводимость
@@ -18,7 +18,7 @@
 
 ### 3.1. Часть A: классификация
 
-- Датасет: (`STL10` / `CIFAR100` / `SVHN` / `Flowers102`)
+- `CIFAR100`
 - Разделение: train/val/test
 - Базовые transforms:
 - Augmentation transforms:
@@ -26,8 +26,8 @@
 
 ### 3.2. Часть B: structured vision
 
-- Датасет: `Pascal VOC` /
-- Трек: `detection` 
+- Датасет: `Pascal VOC` 
+- Трек: `detection`
 - Что считается ground truth:`IoU >= 0.5`
 - Какие предсказания использовались: обнаружение
 
@@ -78,7 +78,7 @@
 - Кривые лучшего прогона классификации: `./artifacts/figures/classification_curves_best.png`
 - Сравнение C1-C4: `./artifacts/figures/classification_compare.png`
 - Визуализация аугментаций: `./artifacts/figures/augmentations_preview.png`
-- Визуализации второй части: `./artifacts/figures/detection_examples.png`
+- Визуализации второй части: `./artifacts/figures/detection_examples.png`,  `artifacts/figures/detection_metrics.png`
 
 Короткая сводка (6-10 строк):
 
