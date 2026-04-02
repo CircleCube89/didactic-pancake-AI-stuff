@@ -1,5 +1,5 @@
-{
-"features":[
+{"best_model":{
+"layers":[
     {
 "name":"Conv2D",
 "InChannels":3,
@@ -41,13 +41,27 @@
  {
 "name":"MaxPool2D",
 "size":2
-}
+},
+ {
+"name":"Flatten"
+
+},
+{"name":"Linear",
+"in":2048,
+"out":256
+},
+{"name":"relu",
+"size":256},
+{"name":"Linear",
+"in":256,
+"out":100}
+
 ],
 "optimizer":{
     "name":"Adam",
     "lr":0.001
 },
-"criterion":{"name":"CrossEntropy"},
+"criterion":"CrossEntropy",
 "seed":42,
 "dataset":"CIFAR100",
 "transforms":{
@@ -56,4 +70,4 @@
 }
 
 
-}
+}}
