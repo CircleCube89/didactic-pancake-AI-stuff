@@ -3,9 +3,16 @@ import pickle
 from  pydantic import BaseModel, Field
 import os
 import myConfig
+import logging
 os.chdir(myConfig.absPath)
 app = FastAPI()
 wheights_file= "artifacts/regression.sav"
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(levelname)s:     %(asctime)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+logger = logging.getLogger(__name__)
 class PredictRequest(BaseModel):
     
 
@@ -60,6 +67,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong gender")
         return HTTPException(status_code=422,detail="Wrong gender")
     
 
@@ -84,6 +92,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong distance")
         return HTTPException(status_code=422,detail="Wrong distance")
     
     if req.Parental_Education_Level=="Postgraduate":
@@ -99,6 +108,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong Parental_Education_Level")
         return HTTPException(status_code=422,detail="Wrong Parental_Education_Level")
     
     if req.Peer_Influence=="Positive":
@@ -114,6 +124,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong Peer_Influence")
         return HTTPException(status_code=422,detail="Wrong Peer_Influence")
     if req.School_Type=="Public":
         data.append(1)
@@ -122,6 +133,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong School_Type")
         return HTTPException(status_code=422,detail="Wrong School_Type")
     if req.Teacher_Quality=="Medium":
         data.append(1)
@@ -136,6 +148,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong Teacher_Quality")
         return HTTPException(status_code=422,detail="Wrong Teacher_Quality")
     
     if req.Family_Income=="Medium":
@@ -151,6 +164,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong Family_Income")
         return HTTPException(status_code=422,detail="Wrong Family_Income")
     if req.Internet_Access:
         data.append(1)
@@ -172,6 +186,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong Motivation_Level")
         return HTTPException(status_code=422,detail="Wrong Motivation_Level")
     if req.Extracurricular_Activities:
         data.append(1)
@@ -192,6 +207,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong Access_to_Resources")
         return HTTPException(status_code=422,detail="Wrong Access_to_Resources")
     
 
@@ -208,6 +224,7 @@ def predict(req:PredictRequest):
         data.append(0)
         data.append(1)
     else:
+        logger.warning("Wrong Parental_Involment")
         return HTTPException(status_code=422,detail="Wrong Parental_Involment")
     data.append(req.Hours_Studied)
     data.append(req.Attendance)
@@ -215,5 +232,6 @@ def predict(req:PredictRequest):
     data.append(req.Previous_Scores)
     data.append(req.Tutoring_Sessions)
     data.append(req.Physical_Activity)
+
     pred_score=model.predict([data,])
     return {"exam_score": pred_score[0]}
